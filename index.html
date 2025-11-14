@@ -1,320 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>The Small Things Matter - Final Assessment</title>
-<style>
-  :root{
-    --bg:#0f172a; --card:#111827; --ink:#e5e7eb; --muted:#9ca3af; --accent:#3b82f6; --ok:#10b981; --bad:#ef4444;
-  }
-  *{box-sizing:border-box} body{margin:0;background:linear-gradient(160deg,#0b1220,#0f172a 60%);color:var(--ink);
-  font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
-  .wrap{max-width:960px;margin:40px auto;padding:0 16px}
-  header{display:flex;gap:14px;align-items:center;justify-content:space-between;margin-bottom:18px}
-  h1{margin:0;font-size:clamp(22px,4vw,32px);font-weight:800}
-  .muted{color:var(--muted)}
-  .pill{padding:2px 10px;border-radius:999px;background:rgba(59,130,246,.18);color:#bfdbfe;border:1px solid rgba(59,130,246,.45);font-weight:700;font-size:12px}
-  .card{background:rgba(17,24,39,.9);border:1px solid rgba(255,255,255,.08);backdrop-filter:blur(4px);
-    padding:20px;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
-  .row{display:grid;grid-template-columns:1fr 1fr;gap:12px} @media (max-width:800px){.row{grid-template-columns:1fr}}
-  label{display:block;font-weight:700;margin-bottom:6px}
-  input[type=text],input[type=email],textarea{width:100%;padding:12px 14px;border:1px solid rgba(255,255,255,.15);border-radius:12px;background:#0b1220;color:var(--ink)}
-  textarea{min-height:90px}
-  fieldset{border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:12px;margin:12px 0}
-  legend{padding:0 8px;color:var(--muted);font-weight:700}
-  .q{margin:10px 0 8px;font-weight:700}
-  .radio{display:grid;gap:6px;margin:6px 0}
-  .hr{height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.18),transparent);margin:20px 0}
-  .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
-  button{appearance:none;border:0;border-radius:12px;padding:12px 14px;font-weight:800;cursor:pointer}
-  .primary{background:var(--accent);color:white}
-  .ghost{background:transparent;color:var(--ink);border:1px solid rgba(255,255,255,.18)}
-  .danger{background:var(--bad);color:white}
-  .score{font-weight:900;font-size:18px}
-  .req{color:#fca5a5;margin-left:4px}
-  .hint{font-size:12px;color:var(--muted)}
-</style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weekly Assessment – Natural, Human, Confident Communication</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            margin: 40px;
+            max-width: 900px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        hr {
+            margin: 30px 0;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .section-title {
+            margin-top: 40px;
+            font-size: 1.4em;
+            font-weight: bold;
+        }
+    </style>
 </head>
+
 <body>
-  <div class="wrap">
-    <header>
-      <div>
-        <h1>The Small Things Matter - Final Assessment</h1>
-        <div class="muted">B2-C1 assessment on assertive communication, concise language, and tense clarity.</div>
-      </div>
-      <span class="pill">Total: 100 pts</span>
-    </header>
 
-    <form id="quiz" class="card" novalidate>
-      <div class="row">
-        <div>
-          <label for="name">Full name <span class="req">*</span></label>
-          <input id="name" name="name" type="text" placeholder="Your full name" required>
-        </div>
-        <div>
-          <label for="email">Email <span class="req">*</span></label>
-          <input id="email" name="email" type="email" placeholder="you@example.com" required>
-        </div>
-      </div>
+<h1>Weekly Assessment – Natural, Human, Confident Communication</h1>
+<p><strong>Level:</strong> B2–C1</p>
+<p><strong>Focus:</strong> Pillars of Communication, Natural English, Clarity, Looping, Escalations, Reframing, Empathy, Spanish Influence</p>
 
-      <div class="hr"></div>
-      <h2>Section A - Multiple Choice <span class="muted">(9 questions · 2 pts each = 18 pts)</span></h2>
+<hr />
 
-      <fieldset>
-        <legend>1</legend>
-        <div class="q">Which sentence sounds the most assertive and professional?</div>
-        <div class="radio">
-          <label><input type="radio" name="mc1" value="A" required> Let me tell you that I can see your claim here.</label>
-          <label><input type="radio" name="mc1" value="B"> I do see that your claim is showing here.</label>
-          <label><input type="radio" name="mc1" value="C"> Your claim was processed on Monday.</label>
-          <label><input type="radio" name="mc1" value="D"> Yeah, I can see your claim here.</label>
-        </div>
-      </fieldset>
+<h2 class="section-title">Section 1 — Pillars & Core Concepts (Short Answer)</h2>
 
-      <fieldset>
-        <legend>2</legend>
-        <div class="q">Which version removes unnecessary fillers?</div>
-        <div class="radio">
-          <label><input type="radio" name="mc2" value="A" required> Let me go ahead and check that for you.</label>
-          <label><input type="radio" name="mc2" value="B"> I'll check that for you.</label>
-          <label><input type="radio" name="mc2" value="C"> I do see here that your coverage is active.</label>
-          <label><input type="radio" name="mc2" value="D"> Yeah, sure, let me tell you that your plan is active.</label>
-        </div>
-      </fieldset>
+<ol>
+    <li>What are the 6 Pillars of Communication?</li>
+    <li>What are some examples of “hedging language”? (Write at least 3)</li>
+    <li>Write examples of fillers and intensifiers. (2 of each)</li>
+    <li>Why should contractions and connectors be used in natural English? (1–2 sentences)</li>
+    <li>Instead of a noun phrase like “the account of Mary,” what should you use?</li>
+    <li>What are the Plain English principles? (List at least 3)</li>
+    <li>Using empathy effectively helps you to… (Complete with 1–2 benefits)</li>
+</ol>
 
-      <fieldset>
-        <legend>3</legend>
-        <div class="q">Which sentence uses the correct tense?</div>
-        <div class="radio">
-          <label><input type="radio" name="mc3" value="A" required> You are covered since January.</label>
-          <label><input type="radio" name="mc3" value="B"> You have been covered since January.</label>
-          <label><input type="radio" name="mc3" value="C"> You was covered since January.</label>
-          <label><input type="radio" name="mc3" value="D"> You are covering since January.</label>
-        </div>
-      </fieldset>
+<hr />
 
-      <fieldset>
-        <legend>4</legend>
-        <div class="q">Which phrase is too casual for a professional call?</div>
-        <div class="radio">
-          <label><input type="radio" name="mc4" value="A" required> Of course, I can help you with that.</label>
-          <label><input type="radio" name="mc4" value="B"> Sure thing, no worries!</label>
-          <label><input type="radio" name="mc4" value="C"> I'll be happy to help you with that.</label>
-          <label><input type="radio" name="mc4" value="D"> Absolutely, I can assist with that.</label>
-        </div>
-      </fieldset>
+<h2 class="section-title">Section 2 — Spanish Influence (Rewrite)</h2>
 
-      <fieldset>
-        <legend>5</legend>
-        <div class="q">Which sentence sounds passive or unsure?</div>
-        <div class="radio">
-          <label><input type="radio" name="mc5" value="A" required> I'll confirm that for you.</label>
-          <label><input type="radio" name="mc5" value="B"> Maybe it can be covered.</label>
-          <label><input type="radio" name="mc5" value="C"> I can verify that for you.</label>
-          <label><input type="radio" name="mc5" value="D"> I'll check your eligibility right now.</label>
-        </div>
-      </fieldset>
+<ol start="8">
+    <li>I have 20 years of working of experience.</li>
+    <li>The system is not letting me.</li>
+    <li>I will proceed to check.</li>
+    <li>I appreciate your comprehension.</li>
+    <li>Write a phrase you personally use influenced by Spanish and rewrite it naturally.</li>
+</ol>
 
-      <fieldset>
-        <legend>6</legend>
-        <div class="q">What's the best assertive alternative to "I don't think I can do that"?</div>
-        <div class="radio">
-          <label><input type="radio" name="mc6" value="A" required> That's not something I can do, but here's what I can help with.</label>
-          <label><input type="radio" name="mc6" value="B"> I can't do that, sorry.</label>
-          <label><input type="radio" name="mc6" value="C"> Maybe it depends on the system.</label>
-          <label><input type="radio" name="mc6" value="D"> I'm not sure, but I can ask.</label>
-        </div>
-      </fieldset>
+<hr />
 
-      <fieldset>
-        <legend>7</legend>
-        <div class="q">Which version is most natural?</div>
-        <div class="radio">
-          <label><input type="radio" name="mc7" value="A" required> I have this information of your claim.</label>
-          <label><input type="radio" name="mc7" value="B"> I have your claim information here.</label>
-          <label><input type="radio" name="mc7" value="C"> I have of your claim information.</label>
-          <label><input type="radio" name="mc7" value="D"> I have information about of your claim.</label>
-        </div>
-      </fieldset>
+<h2 class="section-title">Section 3 — Natural, Human, Confident English (Rewrite)</h2>
 
-      <fieldset>
-        <legend>8</legend>
-        <div class="q">Which word best replaces "do an investigation" in strong verb form?</div>
-        <div class="radio">
-          <label><input type="radio" name="mc8" value="A" required> Make</label>
-          <label><input type="radio" name="mc8" value="B"> Investigate</label>
-          <label><input type="radio" name="mc8" value="C"> Do</label>
-          <label><input type="radio" name="mc8" value="D"> Have</label>
-        </div>
-      </fieldset>
+<ol start="13">
+    <li>Kindly wait a moment.</li>
+    <li>You must provide the document.</li>
+    <li>We cannot do that here.</li>
+    <li>As I already mentioned, that is not possible.</li>
+</ol>
 
-      <fieldset>
-        <legend>9</legend>
-        <div class="q">Which option sounds assertive but still empathetic?</div>
-        <div class="radio">
-          <label><input type="radio" name="mc9" value="A" required> I already told you that's not possible.</label>
-          <label><input type="radio" name="mc9" value="B"> That's not something I can change, but I can share your next steps.</label>
-          <label><input type="radio" name="mc9" value="C"> You'll have to call back later.</label>
-          <label><input type="radio" name="mc9" value="D"> Maybe someone else can help you.</label>
-        </div>
-      </fieldset>
+<hr />
 
-      <div class="hr"></div>
-      <h2>Section B - Sentence Correction (5 x 4 pts = 20 pts)</h2>
-      <label class="q">1) Rewrite assertively and naturally - "Let me go ahead and see if I can probably make that change."</label>
-      <textarea name="sc1" required></textarea>
-      <label class="q">2) Rewrite assertively and naturally - "Maybe you call your doctor."</label>
-      <textarea name="sc2" required></textarea>
-      <label class="q">3) Rewrite assertively and naturally - "I am seeing your claim right now."</label>
-      <textarea name="sc3" required></textarea>
-      <label class="q">4) Rewrite assertively and naturally - "You are covered since June."</label>
-      <textarea name="sc4" required></textarea>
-      <label class="q">5) Rewrite assertively and naturally - "I have this information of your claim."</label>
-      <textarea name="sc5" required></textarea>
+<h2 class="section-title">Section 4 — Clarity & Conciseness (Rewrite)</h2>
 
-      <div class="hr"></div>
-      <h2>Section C - Short Answers (22 pts)</h2>
-      <label class="q">1) Explain the difference between assertive and aggressive communication (1-2 sentences).</label>
-      <textarea name="sa1" required></textarea>
-      <label class="q">2) Why is it important to avoid fillers like "let me tell you" or "I do see here" when speaking to members? (1-2 sentences)</label>
-      <textarea name="sa2" required></textarea>
-      <label class="q">3) Why do words like "maybe" or "probably" make your speech sound less assertive? (1-2 sentences)</label>
-      <textarea name="sa3" required></textarea>
-      <label class="q">4) Write one sentence that sounds assertive but still empathetic.</label>
-      <textarea name="sa4" required></textarea>
-      <label class="q">5) Rewrite this statement to sound assertive and natural - "How long will take that?"</label>
-      <textarea name="sa5" required></textarea>
+<div class="question">
+    <p><strong>17.</strong></p>
+    <p><strong>Customer:</strong> Why was I charged twice?</p>
+    <p><strong>Agent (original):</strong> Well, sometimes when the system processes everything, things take time and then it looks duplicated but it’s really not.</p>
+    <p><strong>Task:</strong> Rewrite the agent’s response.</p>
+</div>
 
-      <div class="hr"></div>
-      <h2>Section D - Roleplay / Long Answer (2 x 20 pts = 40 pts)</h2>
-      <label class="q">Scenario 1: The member says, "You people never help! You lost my form!" Write what you would say - be assertive, empathetic, and professional.</label>
-      <textarea name="rp1" required></textarea>
-      <label class="q">Scenario 2: The member says, "Can you just approve my claim? It's really important!" Write what you would say - be assertive, empathetic, and professional.</label>
-      <textarea name="rp2" required></textarea>
+<div class="question">
+    <p><strong>18.</strong></p>
+    <p><strong>Customer:</strong> Do I need to do anything else?</p>
+    <p><strong>Agent (original):</strong> No, that is all that you need to do right now at this moment in time.</p>
+    <p><strong>Task:</strong> Rewrite the agent’s response.</p>
+</div>
 
-      <div class="btns">
-        <button type="submit" class="primary">Submit</button>
-        <button type="button" id="download" class="ghost">Download CSV</button>
-        <button type="button" id="reset" class="danger">Reset</button>
-      </div>
+<hr />
 
-      <p id="result" class="score"></p>
-      <p class="hint">To collect online, set const ENDPOINT in the code to your webhook URL. Otherwise, use Download CSV after each submission.</p>
-    </form>
-  </div>
+<h2 class="section-title">Section 5 — Looping & Escalations</h2>
 
-<script>
-  // OPTIONAL: webhook to collect online (e.g., Google Apps Script web app URL)
-  const ENDPOINT = ""; // leave empty to skip online POST
+<div class="question">
+    <p><strong>19. Looping – Identify and Fix</strong></p>
+    <p><strong>Customer:</strong> Can you cancel it right now?</p>
+    <p><strong>Agent (original):</strong> As I mentioned, I can’t cancel it right now.</p>
+    <p>a) Is this looping?</p>
+    <p>b) Rewrite the response.</p>
+</div>
 
-  // Multiple-choice answer key (2 pts each, total 18)
-  const ANSWER_KEY = { mc1:"C", mc2:"B", mc3:"B", mc4:"B", mc5:"B", mc6:"A", mc7:"B", mc8:"B", mc9:"B" };
+<div class="question">
+    <p><strong>20. Refund & escalation risk</strong></p>
+    <p><strong>Customer:</strong> I want a refund today.</p>
+    <p><strong>Agent (original):</strong> Refunds take 5–7 days.</p>
+    <p>a) Why might this escalate?</p>
+    <p>b) Rewrite using reframing.</p>
+</div>
 
-  const form = document.getElementById("quiz");
-  const resultEl = document.getElementById("result");
-  const downloadBtn = document.getElementById("download");
-  const resetBtn = document.getElementById("reset");
+<ol start="21">
+    <li>What is one main reason customers escalate?</li>
+    <li>What is one way to prevent escalation through tone or language?</li>
+</ol>
 
-  // Helpers
-  function getRadio(name){
-    const el = form.querySelector('input[name="'+name+'"]:checked');
-    return el ? el.value : "";
-  }
-  function calcMCScore(payload){
-    let score = 0, total = 0;
-    for(const k in ANSWER_KEY){
-      total += 2;
-      if(payload[k] && payload[k] === ANSWER_KEY[k]) score += 2;
-    }
-    return {score,total};
-  }
-  function toCSV(obj){
-    const cols = Object.keys(obj);
-    const header = cols.join(",");
-    const row = cols.map(k=>{
-      const v = (obj[k]||"").toString().replace(/\n/g," ").replace(/"/g,'""');
-      return '"' + v + '"';
-    }).join(",");
-    return header + "\n" + row;
-  }
-  async function postToEndpoint(data){
-    if(!ENDPOINT) return {ok:true, skipped:true};
-    try{
-      const res = await fetch(ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)});
-      return {ok:res.ok};
-    }catch(e){
-      console.warn("POST failed", e);
-      return {ok:false,error:e};
-    }
-  }
+<hr />
 
-  let lastSubmission = null;
+<h2 class="section-title">Section 6 — Reframing (Rewrite)</h2>
 
-  form.addEventListener("submit", async (e)=>{
-    e.preventDefault();
+<ol start="23">
+    <li>I can’t change it today.</li>
+    <li>You sent the wrong document.</li>
+    <li>That department isn’t answering.</li>
+</ol>
 
-    // basic required validation (in case browser didn't enforce)
-    if(!form.name.value.trim() || !form.email.value.trim()){
-      alert("Please enter your name and email.");
-      return;
-    }
+<hr />
 
-    const payload = {
-      timestamp: new Date().toISOString(),
-      name: form.name.value.trim(),
-      email: form.email.value.trim(),
+<h2 class="section-title">Section 7 — Empathy & Validation</h2>
 
-      // MC
-      mc1:getRadio("mc1"), mc2:getRadio("mc2"), mc3:getRadio("mc3"),
-      mc4:getRadio("mc4"), mc5:getRadio("mc5"), mc6:getRadio("mc6"),
-      mc7:getRadio("mc7"), mc8:getRadio("mc8"), mc9:getRadio("mc9"),
+<div class="question">
+    <p><strong>26.</strong> Customer: This has been really stressful.<br>
+    Agent: Let me look into this for you.<br>
+    <strong>Task:</strong> Add an empathy line.</p>
+</div>
 
-      // Sentence correction
-      sc1:(form.sc1.value||"").trim(), sc2:(form.sc2.value||"").trim(), sc3:(form.sc3.value||"").trim(),
-      sc4:(form.sc4.value||"").trim(), sc5:(form.sc5.value||"").trim(),
+<div class="question">
+    <p><strong>27.</strong> Customer: I’ve been trying to fix this all week.<br>
+    Agent: I can help you with that.<br>
+    <strong>Task:</strong> Add an empathy line.</p>
+</div>
 
-      // Short answers
-      sa1:(form.sa1.value||"").trim(), sa2:(form.sa2.value||"").trim(), sa3:(form.sa3.value||"").trim(),
-      sa4:(form.sa4.value||"").trim(), sa5:(form.sa5.value||"").trim(),
+<hr />
 
-      // Roleplays
-      rp1:(form.rp1.value||"").trim(), rp2:(form.rp2.value||"").trim()
-    };
+<h2 class="section-title">Section 8 — Mini Role-Play (3–5 sentences)</h2>
 
-    const {score,total} = calcMCScore(payload);
-    payload.mc_score = score;
-    payload.mc_total = total;
-    payload.total_points = 100;
+<div class="question">
+    <p><strong>28. Scenario:</strong><br>
+    Customer: This is ridiculous. I’ve called three times and nobody is fixing my issue. I want it fixed today.</p>
+    <p><strong>Task:</strong> Write a response using clarity, confidence, empathy, reframing, and no looping.</p>
+</div>
 
-    lastSubmission = payload;
-
-    const postRes = await postToEndpoint(payload);
-    const msg = "Submitted! Auto-graded MC score: " + score + "/" + total + "." + (postRes.skipped
-      ? " Local only: set ENDPOINT to collect online."
-      : (postRes.ok ? " Saved online." : " Online save failed. Use Download CSV instead."));
-    resultEl.textContent = msg;
-    resultEl.style.color = (postRes.ok || postRes.skipped) ? "var(--ok)" : "var(--bad)";
-    window.scrollTo({top: resultEl.offsetTop - 40, behavior: "smooth"});
-  });
-
-  downloadBtn.addEventListener("click", ()=>{
-    if(!lastSubmission){ alert("Please submit the quiz first."); return; }
-    const csv = toCSV(lastSubmission);
-    const blob = new Blob([csv], {type:"text/csv;charset=utf-8;"});
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url; a.download = "small_things_assessment_" + Date.now() + ".csv";
-    document.body.appendChild(a); a.click(); document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-  });
-
-  resetBtn.addEventListener("click", ()=>{
-    form.reset();
-    resultEl.textContent = "";
-    lastSubmission = null;
-    window.scrollTo({top:0, behavior:"smooth"});
-  });
-</script>
-</body>
-</html>
+</bo
